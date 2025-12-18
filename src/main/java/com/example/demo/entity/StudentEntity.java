@@ -1,55 +1,41 @@
 package com.example.demo.entity;
 
-import java.time.LocalDate;
+
 
 public class Studententity {
+   
     private String name;
     private int id;
-    private LocalDate date;
-    private float cgpa;
-
-    public Studententity() {
-    }
-    
+    private String email;
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getId() {
         return id;
     }
-
-    public Studententity(String name, int id, LocalDate date, float cgpa) {
-        this.name = name;
-        this.id = id;
-        this.date = date;
-        this.cgpa = cgpa;
+    public String getEmail() {
+        return email;
     }
-    
-
+    public void setName(String name) {
+        this.name = name;
+    }
     public void setId(int id) {
         this.id = id;
     }
-
-    public LocalDate getDate() {
-        return date;
+    public void setEmail(String email) {
+        this.email = email;
     }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public Studententity(String name, int id, String email) {
+        this.name = name;
+        this.id = id;
+        this.email = email;
     }
-
-    public float getCgpa() {
-        return cgpa;
+    public Studententity() {
     }
-
-    public void setCgpa(float cgpa) {
-        this.cgpa = cgpa;
-    }
+    
 
     
+    
+    
+
 }
